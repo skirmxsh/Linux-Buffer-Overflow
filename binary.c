@@ -37,8 +37,9 @@ int main(int argc, char** argv) {
 
 
     char buf[50];
-    puts("▁ ▂ ▄ ▅ ▆ ▇ █ 2S2C - 2 Secure 2 Crack █ ▇ ▆ ▅ ▄ ▂ ▁\n");
+    puts("\n▁ ▂ ▄ ▅ ▆ ▇ █ 2S2C - 2 Secure 2 Crack █ ▇ ▆ ▅ ▄ ▂ ▁\n");
+    printf("\033[0;32m[+]\033[0m If you have been given a password, enter it here: ");
     gets(buf, stdin);
-    printf("\nYou entered: %s\n", buf);
+    printf("\n\033[0;31m[-] Incorrect, please verify that your password is correct.\n\033[1;31m\n");
     return 0;
 }
